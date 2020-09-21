@@ -185,7 +185,7 @@ img {
 }
 
 .user-avatar a,
-.login-out a{
+.login-out a {
   background-color: var(--basic-greylight);
 }
 
@@ -199,7 +199,7 @@ img {
 }
 
 .user-avatar a:active,
-.login-out a:active{
+.login-out a:active {
   background-color: var(--basic-greylight);
 }
 
@@ -271,23 +271,23 @@ img {
   background: rgba(169,169,169,0.3);
  }
 
-.promo-item:nth-child(1) {
+.promo-item.material {
   background-color: var(--special-yellow);;
 }
 
-.promo-item:nth-child(2){
+.promo-item.tools {
   background-color: var(--special-blue);
 }
 
-.promo-item:nth-child(3){
+.promo-item.technics {
   background-color: var(--special-lilac);
 }
 
-.promo-item:nth-child(4){
+.promo-item.discount {
   background-color: var(--special-greenlight);
 }
 
-.promo-item:nth-child(5){
+.promo-item.supply {
   background-color: var(--special-orange);
 }
 
@@ -336,7 +336,7 @@ img {
 }
 
 .popular-goods h2,
-.popular-manufacture h2{
+.popular-manufacture h2 {
   color: var(--basic-blue-lilac) ;
   background-color: var(--basic-background-greylight);
 
@@ -393,7 +393,7 @@ img {
   list-style: none;
 }
 
-.services-list li{
+.services-list li {
   background: var(--basic-blue-lilac);
   box-shadow: 0 1px 0 var(--basic-navyblue), inset 0 1px 0 var(--special-gray-blue);
 }
@@ -414,7 +414,7 @@ img {
   color: var(--basic-blue-lilac);
 }
 
-.services-list li:hover:not(.current){
+.services-list li:hover:not(.current)  {
   background: var(--basic-navyblue);
   box-shadow: 0 1px 0 var(--basic-navyblue), inset 0 1px 0 var(--special-gray-blue);
 }
@@ -571,12 +571,10 @@ img {
   border-radius: 2px;
 }
 
-
-
 .pagination {
   list-style: none;
 }
-.pagination a{
+.pagination a {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;

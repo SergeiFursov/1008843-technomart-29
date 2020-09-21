@@ -13,6 +13,7 @@
   --basic-background-greylight: #F9F5F0;
   --basic-grayish-blue: #F3F7F9;
   --basic-black: #000000;
+  --basic-black-blue: #212A3A;
   --basic-white: #ffffff;
 
   --special-yellow: #FFBF47;
@@ -95,8 +96,8 @@ img {
 }
 
 .header-logo {
-  width: 160px;
-  height: 42px;
+  width: 220px;
+  height: 47px;
   background-color: var(--basic-red);
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -133,6 +134,10 @@ img {
 
 .bookmarks:active {
   background-color: var(--special-purplish-blue-dark);
+}
+
+.catalog-page .user-cart {
+  background-color: var(--basic-red);
 }
 
 .order {
@@ -174,6 +179,16 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
+.login-link:hover,
+.check-in-link:hover {
+  color: var(--basic-red);
+}
+
+.login-link:active,
+.check-in-link:active {
+  color: var(--basic-greylight);
+}
 .user-info-list,
 .order-info-list {
   list-style: none;
@@ -204,17 +219,20 @@ img {
   background-color: var(--basic-greylight);
 }
 
-.order-info-list a {
+.user-info-item,
+.dot {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-blue-lilac);
 }
 
-.order-info-list a:hover {
+.user-info-item:hover,
+.dot:hover {
   color: var(--basic-red);
 }
 
-.order-info-list a:active {
+.user-info-item:active,
+.dot:active {
   color: var(--basic-greylight);
 }
 
@@ -423,15 +441,12 @@ img {
 .transport-company-list {
   list-style: none;
 }
+
+/* Main footer*/
 .main-footer {
   background-color: var(--basic-blue-lilac);
 }
-.footer-logo {
-  width: 220px;
-  height: 68px;
-  background-color: var(--basic-red);
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-}
+
 .footer-navigation {
   list-style: none;
 }
@@ -476,8 +491,19 @@ img {
 
 .socials-list {
   list-style: none;
+
+}
+.social-item {
+  background-color: var(--basic-black-blue);
 }
 
+.social-item:hover {
+  background-color: var(--basic-red);
+}
+
+.social-item:active {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .socials-list a {
   color: var(--basic-white);
 }
@@ -485,6 +511,16 @@ img {
 .footer-feedback,
 .developed {
   color: var(--special-yellowlight);
+}
+
+.footer-feedback:hover,
+.developed:hover {
+  text-decoration: underline var(--special-yellowlight);
+}
+.footer-feedback:active,
+.developed:active {
+  color: var(--basic-red);
+  text-decoration: none;
 }
 
 /* Catalog */
@@ -588,9 +624,12 @@ img {
 .product-item-bookmarks:active {
   opacity: 50%;
 }
+/* Pagination */
+
 .pagination {
   list-style: none;
 }
+
 .pagination a {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;

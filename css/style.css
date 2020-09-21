@@ -22,6 +22,7 @@
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
+  --special-greendark: #518534;
   --special-red-dark: #BA2732;
   --special-red-light: #CA2C37;
   --special-grey: #A9A9A9;
@@ -571,6 +572,22 @@ img {
   border-radius: 2px;
 }
 
+.product-item-buy:hover {
+  background-color: var(--success);
+}
+
+.product-item-bookmarks:hover {
+  border: 3px solid var(--basic-blue-lilac);
+  border-radius: 2px;
+}
+
+.product-item-buy:active {
+  background-color: var(--special-greendark);
+}
+
+.product-item-bookmarks:active {
+  opacity: 50%;
+}
 .pagination {
   list-style: none;
 }

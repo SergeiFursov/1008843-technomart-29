@@ -142,7 +142,7 @@ img {
 
 .order {
   background-color: var(--basic-green);
-}
+ }
 
 .order:hover {
   background-color: var(--success);

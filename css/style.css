@@ -38,7 +38,7 @@
 
 /* Global */
 body {
-  width: 1200px;
+  width: auto;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "PT Sans", sans-serif;
@@ -497,9 +497,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--special-red-dark);
 }
 
-.popular-goods {
-  margin-bottom: 50px;
-}
+
 .index-columns-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -526,13 +524,24 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-goods h2,
 .popular-manufacture h2 {
   margin: 0;
+  padding-right: 220px;
+  height: 40px;
   font-size: 30px;
   line-height: 30px;
+
   text-transform: uppercase;
   color: var(--basic-blue-lilac);
   background-color: var(--basic-background-greylight);
 }
+.popular-goods {
+  position: relative;
 
+}
+.popular-goods-btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
 .services h3 {
   margin: 0;
   font-size: 30px;
@@ -544,8 +553,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .popular-goods-item {
   background-color: var(--basic-white);
 }
-
-
 
 .new {
   font-size: 14px;
@@ -601,6 +608,16 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: 0 1px 0 var(--basic-navyblue), inset 0 1px 0 var(--special-gray-blue);
 }
 
+
+.delivery {
+  display: none;
+  position: absolute;
+}
+
+.garante {
+  display: none;
+  position: absolute;
+}
 .company-info-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -860,8 +877,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 0;
 
   background-color: var(--basic-ultra-greylight);
-  outline: 5px solid rgba( 150, 100, 200, 0.9);
-  outline-offset: 5px;
+
 
 }
 
@@ -938,23 +954,32 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-item {
+
   min-height: 318px;
+  padding: 0 18px;
   text-align: center;
   border: 1px solid var(--basic-super-greylight);
   box-sizing: border-box;
 
 }
-
+.catalog-item img {
+  max-width: 100%;
+  height: auto;
+  outline: 5px solid rgba( 150, 100, 200, 0.9);
+  outline-offset: 5px;
+}
 .catalog-item-title {
-  padding:28px 17px 0 18px;
+  margin: 8px 18px 8px 17px;
 
   font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+
 }
 
 .old-price {
+  margin-bottom: 8px ;
   font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -965,11 +990,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .new-price-btn {
+
+  margin-bottom: 21px;
+  padding: 5px;
   font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
 }
+
 .catalog-item-buy {
   background-color: var(--basic-green);
   box-shadow: inset 0 -3px 0  var(--basic-gray-green);

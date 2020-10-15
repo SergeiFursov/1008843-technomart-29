@@ -8,7 +8,6 @@
     rel="stylesheet"/>
   <link href="css/normalize.css" rel="stylesheet"/>
   <link href="css/style.css" rel="stylesheet"/>
-
 </head>
 <body class="page-body">
 <header class="main-header index">
@@ -54,7 +53,6 @@
         </ul>
       </div>
     </section>
-
     <section class="main-navigation-wrapper">
       <ul class="site-navigation">
         <li><a class="site-navigation-index" href="#">Главная</a></li>
@@ -68,7 +66,6 @@
     </section>
   </nav>
 </header>
-
 <main class="index-page">
   <div class="container">
     <h1 class="visually-hidden">Магазин стройматериалов и инструментов</h1>
@@ -76,7 +73,8 @@
       <div>
         <h2 class="visually-hidden">Товары и услуги</h2>
         <ul class="promo-list">
-          <li class="promo-item material">
+
+          <li class="promo-item material ribbon">
             <h3 class="promo-item-title">Материалы</h3>
             <a href="#">На любой вкус</a>
           </li>
@@ -98,26 +96,23 @@
           </li>
         </ul>
       </div>
-
-      <div class="slide-wrapper slide-wrapper-2">
+      <div class="slide-wrapper slide-wrapper-1">
         <section class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide ">
+            <li class="slider-item slide slide-current">
               <h3 class="slide-title">Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
-
               <a class="btn slider-btn" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-item slide slider-current">
+            <li class="slider-item slide">
               <h3 class="slide-title">Дрели</h3>
               <p>Соседям на радость</p>
-
               <a class="btn slider-btn" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
           <div class="slider-controls">
-            <button type="button" aria-label="Перфораторы"></button>
-            <button class="current" type="button" aria-label="Дрели"></button>
+            <button class="current" type="button" aria-label="Перфораторы"></button>
+            <button type="button" aria-label="Дрели"></button>
           </div>
           <div class="slider-controls-arrows">
             <button class="controls-arrow controls-arrow-left" type="button" aria-label="Назад"></button>
@@ -126,70 +121,60 @@
         </section>
       </div>
     </section>
-
-
     <section class="popular-goods">
       <h2>Популярные товары:</h2>
       <a class="btn popular-goods-btn" href="#">Все популярные товары</a>
       <ul class="index-columns-list">
         <li class="catalog-item">
-
+          <h3>
+            <span class="catalog-category">Перфоратор BOSCH</span>
+            <span class="catalog-item-title">Bfg 9000</span>
+          </h3>
           <p class="catalog-item-image">
             <img src="img/bfg9000.png" width="184" height="164" alt="Перфоратор БФГ 9000">
           </p>
-          <h3>
-            <span class="catalog-category">Перфоратор Bosch</span>
-            <span class="catalog-item-title">Bfg 9000</span>
-          </h3>
           <p class="catalog-item-price">
-            <span class="catalog-item-old-price">32500 р.</span>
-            <button class="new-price-btn" type="button">25500 р.</button>
+            <b>32500 р.</b>
+            <a class="catalog-item-button" href="#" type="button" aria-label="Купить">25500 р.</a>
           </p>
           <div class="catalog-item-popup">
+            <button type="button" class="popup-item-buy">Купить</button>
+            <button type="button" class="popup-item-bookmarks">В закладки</button>
             <h3>
-              <span class="catalog-category">Перфоратор Bosch</span>
+              <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">Bfg 9000</span>
             </h3>
             <p class="catalog-item-price">
-              <span class="catalog-item-old-price">32500 р.</span>
-              <button class="new-price-btn" type="button">25500 р.</button>
+              <b>32500 р.</b>
+              <a class="catalog-item-button" href="#" type="button" aria-label="Купить">25500 р.</a>
             </p>
-            <button type="button" class="catalog-item-buy">Купить</button>
-            <button type="button" class="catalog-item-bookmarks">В закладки</button>
           </div>
         </li>
-        <li class="catalog-item">
-          <div class="box">
-            <div class="ribbon">
-              New
-            </div>
-          </div>
-          <p class="catalog-item-image">
-            <img src="img/bfg3000.png" width="127" height="112" alt="Перфоратор БФГ 3000"/>
-          </p>
+        <li class="catalog-item ribbon">
           <h3>
             <span class="catalog-category">Перфоратор BOSCH</span>
             <span class="catalog-item-title">Bfg 3000</span>
           </h3>
+          <p class="catalog-item-image">
+            <img src="img/bfg3000.png" width="127" height="112" alt="Перфоратор БФГ 3000"/>
+          </p>
           <p class="catalog-item-price">
-            <span class="catalog-item-old-price">22500 р</span>
-            <button class="new-price-btn" type="button">15500 р.</button>
+            <b>22500 р.</b>
+            <a class="catalog-item-button" href="#" type="button" aria-label="Купить">15500 р.</a>
           </p>
           <div class="catalog-item-popup">
-
+            <button type="button" class="popup-item-buy">Купить</button>
+            <button type="button" class="popup-item-bookmarks">В закладки</button>
             <h3>
               <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">Bfg 3000</span>
             </h3>
             <p class="catalog-item-price">
-              <span class="catalog-item-old-price">22500 р.</span>
-              <button class="new-price-btn" type="button">15500 р.</button>
+              <b>22500 р.</b>
+              <a class="catalog-item-button" href="#" type="button" aria-label="Купить">15500 р.</a>
             </p>
-            <button type="button" class="catalog-item-buy">Купить</button>
-            <button type="button" class="catalog-item-bookmarks">В закладки</button>
           </div>
         </li>
-
         <li class="catalog-item">
           <h3>
             <span class="catalog-category">Перфоратор BOSCH</span>
@@ -199,53 +184,47 @@
             <img src="img/bfg6000.png" width="144" height="128" alt="Перфоратор БФГ 6000"/>
           </p>
           <p class="catalog-item-price">
-            <span class="catalog-item-old-price">30500 р.</span>
-            <button class="new-price-btn" type="button">25500 р.</button>
+            <b>30500 р.</b>
+            <a class="catalog-item-button" href="#" type="button" aria-label="Купить">25500 р.</a>
           </p>
           <div class="catalog-item-popup">
-            <button type="button" class="catalog-item-buy">Купить</button>
-            <button type="button" class="catalog-item-bookmarks">В закладки</button>
+            <button type="button" class="popup-item-buy">Купить</button>
+            <button type="button" class="popup-item-bookmarks">В закладки</button>
             <h3>
               <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">Bfg 6000</span>
             </h3>
             <p class="catalog-item-price">
-              <span class="catalog-item-old-price">30500 р.</span>
-              <button class="new-price-btn" type="button">25500 р.</button>
+              <b>30500 р.</b>
+              <a class="catalog-item-button" href="#" type="button" aria-label="Купить">25500 р.</a>
             </p>
           </div>
         </li>
-        <li class="catalog-item">
-          <div class="box">
-            <div class="ribbon">
-              New
-            </div>
-          </div>
-          <p class="catalog-item-image">
-            <img src="img/bfg2000.png" width="127" height="112" alt="Перфоратор БФГ 2000"/>
-          </p>
+        <li class="catalog-item ribbon">
           <h3>
             <span class="catalog-category">Перфоратор BOSCH</span>
             <span class="catalog-item-title">Bfg 2000</span>
           </h3>
-          <p class="catalog-item-price">
-            <span class="catalog-item-old-price">15500 р.</span>
-            <button class="new-price-btn" type="button">12500 р.</button>
+          <p class="catalog-item-image">
+            <img src="img/bfg2000.png" width="127" height="112" alt="Перфоратор БФГ 2000"/>
+          </p>
+          <p class="catalog-item-price new">
+            <b>12500 р.</b>
+            <a class="catalog-item-button" href="#" type="button" aria-label="Купить">12500 р.</a>
           </p>
           <div class="catalog-item-popup">
-            <button type="button" class="catalog-item-buy">Купить</button>
-            <button type="button" class="catalog-item-bookmarks">В закладки</button>
+            <button type="button" class="popup-item-buy">Купить</button>
+            <button type="button" class="popup-item-bookmarks">В закладки</button>
             <h3>
               <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">Bfg 2000</span>
             </h3>
-            <p class="catalog-item-price">
-              <span class="catalog-item-old-price new">12500 р.</span>
-              <button class="new-price-btn" type="button">12500 р.</button>
+            <p class="catalog-item-price new">
+              <b>12500 р.</b>
+              <a class="catalog-item-button" href="#" type="button" aria-label="Купить">12500 р.</a>
             </p>
           </div>
         </li>
-
       </ul>
     </section>
     <section class="logo-company-list">
@@ -298,8 +277,7 @@
             <a href="#">Кредит</a>
           </li>
         </ul>
-
-        <div class="services-promo-wrapper services-promo-wrapper-1">
+        <div class="services-promo-wrapper credit services-promo-wrapper-1">
           <ul class="services-promo-list">
             <li class="services-promo services-promo-item services-promo-current">
               <h3>Доставка</h3>
@@ -325,22 +303,20 @@
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
-
   <div class="container">
     <div class="company-info-wrapper">
       <section class="company-info">
         <h2>Компания «Техномарт»</h2>
         <p class="company-info-promotion">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
-          <br/> ремонта и строительства не оставит равнодушными любителей сэкономить на
+          <br/> ремонта и строительства не оставит равнодушными любителей сэкономить на
           <br/> гастарбайтерах.
         </p>
         <p class="company-info-delivery">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br/> Техномарт работает со многими
+          Мы можем доставить ваш товар в самые отдаленные точки России!<br/> Техномарт работает со многими
           транспортными компаниями:
         </p>
         <ul class="transport-company-list">
@@ -353,7 +329,7 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>
-          Вы можете забрать товар сами,<br/> заехав в наш офис:
+          Вы можете забрать товар сами,<br/> заехав в наш офис:
         </p>
         <a class="map" href="#">
           <img src="img/map-small.jpg" width="300" height="158"
@@ -361,7 +337,6 @@
         </a>
         <a class="btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
       </section>
-
     </div>
   </div>
 </main>
@@ -441,7 +416,6 @@
     </section>
   </div>
 </footer>
-
 <section class="modal modal-feedback">
   <form class="modal-feedback-form" action="https://echo.academy.ru" method="post">
     <p class="item-modal name">
@@ -466,21 +440,73 @@
   <div class="btn-modal">
     <button class="btn btn-modal-feedback" type="submit">Отправить</button>
   </div>
-  <button class="close-cross" type="button"></button>
+  <button class="close-cross" type="button" aria-label="Закрыть"></button>
 </section>
-<section class="modal map-popup">
+<section class="modal map-popup map">
   <h2 class="visually-hidden">Техномарт-адрес магазина</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.32089461561424!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601541674980!5m2!1sru!2sru"
-    width="943" height="449"
-    style="border:0;" allowfullscreen=""
-    aria-hidden="false" tabindex="0"></iframe>
-  <button class="close-cross" type="button"></button>
+  <a class="map" type="button">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.32089461561424!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601541674980!5m2!1sru!2sru"
+      width="943" height="449"
+      style="border:0;" allowfullscreen=""
+      aria-hidden="false" tabindex="0"></iframe>
+  </a>
+  <button class="close-cross close-map" type="button" aria-label="Закрыть"></button>
 </section>
-<script src="js/popup.js"></script>
-<script src="js/map-popup.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/map.js"></script>
+<script>
+  const link = document.querySelector(".contacts-btn");
+  const popup = document.querySelector(".modal-feedback");
+  const closer = document.querySelector(".close-cross");
+  const login = popup.querySelector("[name=popup-name]");
+  const email = popup.querySelector("[name=popup-mail]")
+  const form = popup.querySelector("form");
 
-<!--<script src="js/slider.js"></script>-->
+  let isStorageSupport = true;
+  let storage = "";
 
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    login.focus();
+    if (storage) {
+      login.value = storage;
+    }
+  });
+
+  closer.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.add("modal-error");
+
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+      evt.preventDefault();
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+</script>
 </body>
 </html>

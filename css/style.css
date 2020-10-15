@@ -1067,6 +1067,8 @@ a.site-navigation-contacts {
   height: 316px;
   text-transform: uppercase;
   border: 1px solid var(--basic-super-graylight);
+  object-fit: contain;
+  background-color: var(--basic-white);
 }
 
 .catalog-item h3 {

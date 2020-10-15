@@ -55,7 +55,7 @@
     </section>
     <section class="main-navigation-wrapper">
       <ul class="site-navigation">
-        <li><a class="site-navigation-index" href="#">Главная</a></li>
+        <li aria-label="Главная"><a class="site-navigation-index" href="#">Главная</a></li>
         <li><a class="site-navigation-company" href="#">Компания</a></li>
         <li><a class="site-navigation-catalog" href="catalog.html">Каталог</a></li>
         <li><a class="site-navigation-news" href="#">Новости</a></li>
@@ -419,22 +419,22 @@
 <section class="modal modal-feedback">
   <form class="modal-feedback-form" action="https://echo.academy.ru" method="post">
     <p class="item-modal name">
-      <label for="modal-feedback-user-name">Ваше имя:</label>
+      <label for="modal-feedback-user-name" id="label-name">Ваше имя:</label>
       <input type="text" name="popup-name"
-             id="modal-feedback-user-name" placeholder="Имя Фамилия" required
+             id="modal-feedback-user-name" placeholder="Имя Фамилия" aria-labelledby="label-name" required
       >
     </p>
     <p class="item-modal mail">
-      <label for="modal-feedback-user-mail">Ваш e-mail:</label>
+      <label for="modal-feedback-user-mail" id="label-mail">Ваш e-mail:</label>
       <input type="email" name="popup-mail"
              id="modal-feedback-user-mail"
-             placeholder="email@example.com" required>
+             placeholder="email@example.com" aria-labelledby="label-mail" required>
     </p>
     <p class="item-modal text">
-      <label for="modal-feedback-text">Текст письма:</label>
+      <label for="modal-feedback-text" id="label-text">Текст письма:</label>
       <input type="text"
              id="modal-feedback-text"
-             placeholder="В свободной форме" required>
+             placeholder="В свободной форме" aria-labelledby="label-text" required>
     </p>
   </form>
   <div class="btn-modal">

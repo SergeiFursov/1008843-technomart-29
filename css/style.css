@@ -1151,7 +1151,8 @@ a.site-navigation-contacts {
 }
 
 .new b {
-  opacity: 0;
+ 
+  visibility: hidden;
 }
 
 .catalog-item-popup {

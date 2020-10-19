@@ -230,35 +230,38 @@
       <a class="btn logo-company-list-btn" href="#">Все производители</a>
       <ul class="index-columns-list">
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-bosch.png" width="220" height="145" alt="Логотип компании Бош"
-                           aria-label="Комания Бош"></a>
+          <a href="https://www.bosch.ru/"><img src="img/logo-bosch.png" width="220" height="145"
+                                               alt="Логотип компании Бош"
+                                               aria-label="Комания Бош"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-makita.png" width="220" height="145" alt="Логотип компании Макита"
-                           aria-label="Комания  Макита"></a>
+          <a href="https://makita.one/"><img src="img/logo-makita.png" width="220" height="145"
+                                             alt="Логотип компании Макита"
+                                             aria-label="Комания  Макита"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-dewalt.png" width="220" height="145" alt="Логотип компании Дэволт"
-                           aria-label="Комания Дэволт"></a>
+          <a href="https://shop.dewalt.ru/"><img src="img/logo-dewalt.png" width="220" height="145"
+                                                 alt="Логотип компании Дэволт"
+                                                 aria-label="Комания Дэволт"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-interskol.png" width="220" height="145" alt="Логотип компании Интерскол"
+          <a href="https://www.interskol.ru/"><img src="img/logo-interskol.png" width="220" height="145" alt="Логотип компании Интерскол"
                            aria-label="Комания Интерскол"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-hitachi.png" width="220" height="145" alt="Логотип компании Хитачи"
+          <a href="https://www.hitachi.ru/ru"><img src="img/logo-hitachi.png" width="220" height="145" alt="Логотип компании Хитачи"
                            aria-label="Комания Хитачи"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-lg.png" width="220" height="145" alt="Логотип компании Эл Джи"
+          <a href="https://www.lg.com/ru"><img src="img/logo-lg.png" width="220" height="145" alt="Логотип компании Эл Джи"
                            aria-label="Комания  Эл Джи"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-aeg.png" width="220" height="145" alt="Логотип компании АЕГ"
+          <a href="https://www.aeg.ru/"><img src="img/logo-aeg.png" width="220" height="145" alt="Логотип компании АЕГ"
                            aria-label="Комания АЕГ"></a>
         </li>
         <li class="logo-company-item">
-          <a href="#"><img src="img/logo-metabo.png" width="220" height="145" alt="Логотип компании Метабо"
+          <a href="https://shop-metabo.ru/"><img src="img/logo-metabo.png" width="220" height="145" alt="Логотип компании Метабо"
                            aria-label="Комания Метабо"></a>
         </li>
       </ul>
@@ -271,18 +274,17 @@
         Хороший интернет-магазин отличается от плохого не только ценами!<br/> Мы стараемся изо всех сил, чтобы
         сделать ваши покупки приятными.
       </p>
-
       <div class="services-slider">
-        <div class="services-promo-wrapper credit services-promo-wrapper-1">
+        <div class="services-promo-wrapper">
           <ul class="services-promo-list">
-            <li class="services-promo services-promo-item services-promo-current">
+            <li class="services-promo-item services-img-1 services-promo-current">
               <h3>Доставка</h3>
               <p class="services-promo-text">Мы с удовольствием доставим ваш товар прямо<br/> к вашему подъезду
                 совершенно
                 бесплатно!<br/> Ведь мы неплохо заработаем,<br/> поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="services-promo services-promo-item">
+            <li class="services-promo-item services-img-2">
               <h3>Гарантия</h3>
               <p class="services-promo-text">Если купленный у нас товар поломается или заискрит,<br> а также в случае
                 пожара, спровоцированного
@@ -290,7 +292,7 @@
                 новый.<br>
                 Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li class="services-promo services-promo-item">
+            <li class="services-promo-item services-img-3">
               <h3>Кредит</h3>
               <p class="services-promo-text">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам
                 на
@@ -306,8 +308,6 @@
           <button class="service-btn" type="button" aria-label="Услуги кредитования">Кредит</button>
         </div>
       </div>
-
-
     </div>
   </section>
   <div class="container">
@@ -460,9 +460,19 @@
     aria-hidden="false" tabindex="0"></iframe>
   <button class="close-cross close-map" type="button" aria-label="Закрыть"></button>
 </section>
+<section class="modal modal-cart">
+  <h3>Товар добавлен в корзину!</h3>
+  <p class="btn-modal btn-modal-cart">
+    <a class="btn" href="#">Оформить заказ</a>
+    <a class="btn" href="catalog.html">Продолжить покупки</a>
+  </p>
+  <button class="close-cross close-cart" type="button" aria-label="Закрыть"></button>
+</section>
 <script src="js/modal.js"></script>
 <script src="js/map.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/service-slider.js"></script>
+<script src="js/cart.js"></script>
 <script>
   const link = document.querySelector(".contacts-btn");
   const popup = document.querySelector(".modal-feedback");

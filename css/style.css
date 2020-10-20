@@ -680,7 +680,7 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-column: 2 / 8;
   display: flex;
   flex-wrap: wrap;
-  margin: 38px 0 0 0;
+  margin: 40px 0 0 0;
   padding: 0;
   list-style: none;
   background-color: var(--basic-blue-lilac);
@@ -694,6 +694,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-style: normal;
   font-weight: normal;
   color: var(--basic-white);
+
 }
 
 a.site-navigation-index {

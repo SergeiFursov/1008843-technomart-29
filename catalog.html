@@ -22,8 +22,11 @@
                   fill="white"/>
           </svg>
         </a>
-        <div class="header-search">
-          <input class="input-search" type="search" name="search" onfocus="this.placeholder=''" placeholder="Поиск:"/>
+        <form class="header-search" method="post" action="#">
+          <input class="input-search"
+                 type="search"
+                 name="search"
+                 placeholder="Поиск:"/>
           <button class="btn-search">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +36,7 @@
                     fill="white"/>
             </svg>
           </button>
-        </div>
+        </form>
         <ul class="top-menu-list">
           <li class="bookmarks"><a href="#">Закладки: 0</a></li>
           <li class="user-cart"><a href="#">Корзина: 10</a></li>
@@ -93,7 +96,7 @@
     <div class="page-catalog">
       <section class="filters">
         <h2 class="filters-title">Фильтр:</h2>
-        <form class="filter" method="post" action="https://echo.htmlacademy.ru" target="_blank">
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item filter-price">
             <legend>Цена:</legend>
             <div class="range-filter">
@@ -116,7 +119,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-item filter-producer">
-            <legend>Производители</legend>
+            <legend>Производители:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input"
@@ -146,7 +149,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-item filter-supply">
-            <legend>Питание</legend>
+            <legend>Питание:</legend>
             <ul>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input"
@@ -295,7 +298,7 @@
               </p>
               <p class="catalog-item-price">
                 <b>30500 р.</b>
-                <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">22500 р.</a>
+                <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">25500 р.</a>
               </p>
               <div class="catalog-item-popup">
                 <button type="button" class="popup-item-buy" aria-label="В корзину">Купить</button>
@@ -306,7 +309,7 @@
                 </h3>
                 <p class="catalog-item-price">
                   <b>30500 р.</b>
-                  <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">22500
+                  <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">25500
                     р.</a>
                 </p>
               </div>
@@ -373,7 +376,7 @@
               </p>
               <p class="catalog-item-price">
                 <b>30500 р.</b>
-                <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">22500 р.</a>
+                <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">25500 р.</a>
               </p>
               <div class="catalog-item-popup">
                 <button type="button" class="popup-item-buy" aria-label="В корзину">Купить</button>
@@ -384,7 +387,7 @@
                 </h3>
                 <p class="catalog-item-price">
                   <b>30500 р.</b>
-                  <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">22500
+                  <a class="catalog-item-button" href="#" aria-label="Добавить перфоратор Бфг 6000 в корзину">25500
                     р.</a>
                 </p>
               </div>
@@ -426,7 +429,7 @@
             <li class="pagination-item">
               <a href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item next-page">
               <a href="#">Следующая</a>
             </li>
           </ul>
@@ -522,7 +525,7 @@
         </p>
         <p>
           Разработано —<br/>
-          <a class="developed" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="developed" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
         </p>
       </div>
     </section>

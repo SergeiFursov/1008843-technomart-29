@@ -76,7 +76,7 @@
 /* Global */
 
 body {
-  width: auto;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "PT Sans", sans-serif;
@@ -104,6 +104,7 @@ img {
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
+  vertical-align: middle;
   background-color: var(--basic-red);
   border: none;
   outline: none;
@@ -664,6 +665,9 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: inset 0 -5px 0 var(--basic-navyblue);
 }
 
+.inner-page .site-navigation {
+  margin: 38px 0 0 0;
+}
 .site-navigation a {
   display: block;
   margin: 0;
@@ -1020,8 +1024,10 @@ a.site-navigation-contacts {
 .inner-catalog-list {
   display: grid;
   grid-template-columns: repeat(3, 220px);
-  gap: 20px;
-  margin-bottom: 50px;
+  /*gap: 20px;*/
+  column-gap: 20px;
+  row-gap: 18px;
+  margin-bottom: 48px;
   padding: 0;
   list-style: none;
 }
@@ -1043,7 +1049,7 @@ a.site-navigation-contacts {
 .catalog-item h3 {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1077,7 +1083,7 @@ a.site-navigation-contacts {
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1144,7 +1150,7 @@ a.site-navigation-contacts {
 .catalog-item-popup h3 {
   width: 185px;
   margin: 0 20px 0 17px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1281,7 +1287,7 @@ a.site-navigation-contacts {
 .contacts p {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1391,6 +1397,7 @@ a.site-navigation-contacts {
 .service-btn:hover:not(.current) {
   background: var(--basic-navyblue);
   box-shadow: 0 1px 0 var(--basic-navyblue), inset 0 1px 0 var(--special-gray-blue);
+  cursor: pointer;
 }
 
 
@@ -1435,7 +1442,7 @@ p.company-info-delivery {
 }
 
 .transport-company-list p {
-  font-family: Cuprum, "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1547,7 +1554,7 @@ p.company-info-delivery {
 }
 
 .breadcrumbs a {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1590,7 +1597,7 @@ p.company-info-delivery {
 .sort-title {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1606,7 +1613,7 @@ p.company-info-delivery {
 
 .filter legend {
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -1623,7 +1630,7 @@ p.company-info-delivery {
   position: relative;
   display: block;
   padding-left: 35px;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -1695,7 +1702,7 @@ p.company-info-delivery {
   border: none;
   border-radius: 5px;
   background-color: var(--basic-ultra-graylight);
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -1725,6 +1732,10 @@ p.company-info-delivery {
 }
 
 /* Чек-бокс */
+
+.filter-producer {
+  margin-bottom: 17px;
+}
 
 .filter-producer ul {
   margin-top: 18px;
@@ -1820,7 +1831,8 @@ p.company-info-delivery {
 /* Радио-баттон */
 
 .filter-supply {
-  margin-top: 17px;
+  /*margin-top: 17px;*/
+  margin-bottom: 15px;
 }
 
 .filter-supply ul {
@@ -1884,9 +1896,11 @@ p.company-info-delivery {
 
 .filter-btn {
   width: 220px;
-  margin-top: 14px;
-  padding: 11px 0 9px 0;
-  font-size: 14px;
+  padding: 9px 0 9px 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -1936,7 +1950,7 @@ p.company-info-delivery {
 .sort-list li {
   margin: 0;
   padding: 10px 0;
-  font-family: PT Sans, Arial, serif;
+  font-family: "PT Sans", "Arial", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -2007,7 +2021,7 @@ li.sort-item-by-price {
 .sort-list a {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2039,7 +2053,7 @@ li.sort-item-by-price {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 67px 0;
+  margin: 0 0 59px 0;
   padding: 0;
   list-style: none;
 }
@@ -2050,12 +2064,13 @@ li.sort-item-by-price {
 
 .pagination-item:last-child {
   margin-right: 0;
+
 }
 
 .pagination-item a {
   display: block;
-  padding: 10px 15px;
-  font-family: PT Sans, Arial, sans-serif;
+  padding: 9px 14px 9px 15px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -2064,6 +2079,12 @@ li.sort-item-by-price {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-grayish);
   border-radius: 2px;
+}
+
+.next-page a {
+  padding: 9px 31px 9px 32px;
+  text-transform: uppercase;
+
 }
 
 .pagination-item a:hover {
@@ -2100,7 +2121,7 @@ li.sort-item-by-price {
 .info-products p {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -2148,9 +2169,8 @@ li.sort-item-by-price {
 .footer-contacts {
   display: grid;
   grid-template-columns: 1fr 600px;
-  margin: 0 0 54px 0;
+  margin: 0 0 52px 0;
   padding: 0;
-
 }
 
 .footer-contacts p,
@@ -2380,7 +2400,7 @@ a[href^="mailto:"],
 
 .item-modal input[placeholder],
 .item-modal textarea[placeholder] {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2489,7 +2509,7 @@ a[href^="mailto:"],
   position: relative;
   margin: 0;
   padding: 66px 0 66px 0;
-  font-family: Cuprum, "PT Sans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;

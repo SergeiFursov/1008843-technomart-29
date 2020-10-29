@@ -7,7 +7,7 @@
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet"/>
   <link href="css/normalize.css" rel="stylesheet"/>
-  <link href="css/style-min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="page-body">
 <header class="main-header index">
@@ -18,20 +18,19 @@
         <a class="main-header-logo" href="index.html">
           <p class="visually-hidden">Техномарт</p>
         </a>
-        <form class="header-search" method="post" action="#">
-          <input class="input-search"
-                 type="search"
-                 name="search"
-                 placeholder="Поиск:"/>
-          <button class="btn-search">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
-                    fill="white"/>
-            </svg>
-          </button>
+        <form class="header-search" method="post" action="#" name="search">
+          <label>
+            <input class="input-search" type="search" placeholder="Поиск:">
+            <button class="btn-search" type="submit">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                      fill="white"/>
+              </svg>
+            </button>
+          </label>
         </form>
         <ul class="top-menu-list">
           <li class="bookmarks"><a href="#">Закладки: 0</a></li>
@@ -46,7 +45,7 @@
       </span>
       <div class="header-contact">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <a class="header-phone" href="tel:+7(812)5550555">+7 (812) 555-05-55</a>
+        <a class="header-phone" href="tel:+78125550555" aria-label="Телефон">+7 (812) 555-05-55</a>
         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="user-login">
@@ -368,7 +367,7 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <p>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a class="footer-phone" href="tel:+7(812)5550555" aria-label="Телефон">+7 (812) 555-05-55</a>
+        <a class="footer-phone" href="tel:+78125550555" aria-label="Телефон">+7 (812) 555-05-55</a>
       </p>
       <h2 class="visually-hidden">Товары и услуги</h2>
       <ul class="footer-catalog-list">
@@ -438,20 +437,21 @@
         <input type="text" name="popup-name"
                id="modal-feedback-user-name"
                placeholder="Имя Фамилия"
-               aria-labelledby="label-name"
-               required>
+               aria-labelledby="label-name">
       </p>
       <p class="item-modal mail">
         <label for="modal-feedback-user-mail" id="label-mail">Ваш e-mail:</label>
         <input type="email" name="popup-mail"
                id="modal-feedback-user-mail"
-               placeholder="email@example.com" aria-labelledby="label-mail" required>
+               placeholder="email@example.com"
+               aria-labelledby="label-mail">
       </p>
       <p class="item-modal text">
         <label for="modal-feedback-text" id="label-text">Текст письма:</label>
         <textarea class="modal-message"
                   id="modal-feedback-text"
-                  placeholder="В свободной форме" aria-labelledby="label-text" required></textarea>
+                  placeholder="В свободной форме"
+                  aria-labelledby="label-text"></textarea>
       </p>
       <button class="btn btn-modal-feedback" type="submit">Отправить</button>
       <button class="close-cross" type="button" aria-label="Закрыть"></button>

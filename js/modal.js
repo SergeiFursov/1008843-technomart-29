@@ -18,20 +18,26 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  login.focus();
+
   if (storage) {
     login.value = storage;
+    email.focus();
+  } else {
+    login.focus();
   }
 });
 
 closer.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
@@ -45,6 +51,7 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 });

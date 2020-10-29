@@ -25,7 +25,6 @@
   --special-blue: #3BBCE3;
   --special-yellowlight: #FFD180;
   --special-lilac: #DC91D8;
-
   --special-greenlight: #8ED78F;
   --special-greenmoderate: #00CA74;
   --success: #5FBB2D;
@@ -240,6 +239,7 @@ img {
   background-color: var(--basic-navyblue);
   border: none;
   outline: none;
+
 }
 
 .btn-search {
@@ -252,6 +252,7 @@ img {
   outline: 0;
   background-color: transparent;
   opacity: 0.3;
+
 }
 
 .header-search:hover .btn-search {
@@ -259,6 +260,7 @@ img {
   cursor: pointer;
 }
 
+.header-search:active,
 .header-search:active .btn-search {
   opacity: 0.5;
 }
@@ -273,10 +275,12 @@ img {
 
 .input-search:focus + .btn-search path {
   fill: var(--basic-red);
+
 }
 
 .input-search:focus {
   background-color: var(--basic-white);
+
 }
 
 .input-search:focus::placeholder {
@@ -299,7 +303,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .bookmarks a {
   position: relative;
   padding-left: 43px;
-
 }
 
 .bookmarks a:before {
@@ -409,6 +412,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: inline-block;
   position: relative;
   padding: 4px 42px 5px 72px;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -668,6 +672,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .inner-page .site-navigation {
   margin: 38px 0 0 0;
 }
+
 .site-navigation a {
   display: block;
   margin: 0;
@@ -796,7 +801,7 @@ a.site-navigation-contacts {
   right: -31px;
   height: 100px;
   width: 100px;
-  background-image: url("../img/Rectangle 15.png");
+  background-image: url("../img/rectangle.png");
   background-repeat: no-repeat;
 }
 
@@ -1363,7 +1368,7 @@ a.site-navigation-contacts {
   content: " ";
   width: 10px;
   height: 279px;
-  background-image: url("../img/Layer 118.svg");
+  background-image: url("../img/layer.svg");
 }
 
 .services-promo-btn {
@@ -2312,7 +2317,7 @@ a[href^="mailto:"],
   right: -31px;
   height: 100px;
   width: 100px;
-  background-image: url("../img/Rectangle 15.png");
+  background-image: url("../img/rectangle.png");
   background-repeat: no-repeat;
   z-index: 2;
 }

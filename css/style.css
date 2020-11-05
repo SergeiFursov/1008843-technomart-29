@@ -72,11 +72,6 @@
   }
 }
 
-
-/** {*/
-/*  outline: 1px solid red;*/
-/*  outline-offset: 1px;*/
-/*}*/
 /* Global */
 
 body {
@@ -680,7 +675,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-style: normal;
   font-weight: normal;
   color: var(--basic-white);
-
 }
 
 a.site-navigation-index {
@@ -876,7 +870,6 @@ a.site-navigation-contacts {
   position: relative;
   width: 620px;
   color: var(--basic-white);
-
 }
 
 .slider-list {
@@ -1158,6 +1151,7 @@ a.site-navigation-contacts {
   display: block;
   cursor: pointer;
 }
+
 .catalog-item-popup {
   display: none;
   position: absolute;
@@ -1179,7 +1173,6 @@ a.site-navigation-contacts {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-
   text-transform: uppercase;
 }
 
@@ -1276,7 +1269,6 @@ a.site-navigation-contacts {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
-
 }
 
 .services h2 {
@@ -1365,7 +1357,6 @@ a.site-navigation-contacts {
   shape-margin: 20px;
   clip-path: polygon(59% 0, 100% 0, 100% 100%, 0% 100%);
   background: transparent;
-
 }
 
 .services-img-2 {
@@ -2017,7 +2008,6 @@ input[type=number] {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: dotted 1px var(--basic-red);
-  /*opacity: 0.3;*/
 }
 
 .sort-list .current {
@@ -2108,14 +2098,11 @@ li.sort-item-by-function {
 
 .info-products {
   background-color: var(--basic-background);
-
 }
 
 .product-details {
   margin: 0;
   padding: 0 0 68px 0;
-
-
 }
 
 .product-details h2 {
@@ -2140,7 +2127,6 @@ li.sort-item-by-function {
   margin: 0 0 59px 0;
   padding: 0;
   list-style: none;
-
 }
 
 .pagination-item {
@@ -2202,7 +2188,6 @@ li.sort-item-by-function {
   grid-template-columns: 1fr 720px;
   margin: 0;
   padding: 0;
-
 }
 
 .footer-logo img {
@@ -2218,7 +2203,6 @@ li.sort-item-by-function {
   margin: 0;
   padding: 38px 0 0 0;
   list-style: none;
-
 }
 
 .footer-site-navigation a {
@@ -2235,6 +2219,7 @@ li.sort-item-by-function {
   margin: 0 0 53px 0;
   padding: 0;
 }
+
 .inner-page .footer-contacts {
   margin: 0 0 52px 0;
 }
